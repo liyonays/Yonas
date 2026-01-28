@@ -7,6 +7,86 @@
     <!-- SEO Meta Tags -->
     <meta name="description" content="Your description">
     <meta name="author" content="Your name">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0f172a;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Gallery Layout */
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    columns: 3;
+    column-gap: 20px;
+}
+
+/* Gallery Item */
+.gallery-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #0f172a;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .gallery-container {
+        columns: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        columns: 1;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+}
+
+    </style>
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
 	<meta property="og:site_name" content="" /> <!-- website name -->
@@ -18,7 +98,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Yonas Alemu</title>
+    <title>Work Gallery - Yonas</title>
     
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -71,7 +151,7 @@
                         <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
                     </li>
                 </ul>
-              <span class="nav-item social-icons">
+               <span class="nav-item social-icons">
                     <span class="fa-stack">
                         <a href="#https://web.facebook.com/liyonay.j">
                             <i class="fas fa-circle fa-stack-2x"></i>
@@ -92,95 +172,111 @@
 
 
     <!-- Header -->
-<header class="ex-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-10 offset-xl-1">
-                <h1>Project Details</h1>
-            </div>
-        </div>
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                     <h1>Our Gallery</h1>
+    <p style="color: white;">A collection of our latest work & moments</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+   
+
+<main class="gallery-container">
+
+    <div class="gallery-item">
+        <img src="images/a.png" alt="Gallery Image">
     </div>
-</header>
-<!-- end of header -->
 
-
-<!-- Project Image -->
-<div class="ex-basic-1 pt-5 pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-fluid mt-5 mb-3" src="images/project-details-large.jpg" alt="Project Preview">
-            </div>
-        </div>
+    <div class="gallery-item">
+        <img src="images/b.png" alt="Gallery Image">
     </div>
-</div>
-<!-- end of project image -->
 
-
-<!-- Project Description -->
-<div class="ex-basic-1 pt-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-10 offset-xl-1">
-
-                <h3>Logo Mobile App – UI Design to Code Conversion</h3>
-                <p class="mb-3"><strong>Personal Project</strong></p>
-
-                <ul class="list-unstyled">
-                    <li>• Designed a complete mobile app UI including logo, color system, typography, and layout.</li>
-                    <li>• Converted Figma/PNG designs into responsive code using HTML, CSS, and JavaScript.</li>
-                    <li>• Implemented pixel-perfect layouts with strong attention to spacing and visual hierarchy.</li>
-                    <li>• Built interactive UI components and basic app logic using JavaScript.</li>
-                    <li>• Optimized the interface for mobile responsiveness and performance.</li>
-                    <li>• Demonstrated strong UI/UX design and front-end development skills.</li>
-                </ul>
-
-                <p class="mt-3">
-                    <strong>Technologies Used:</strong><br>
-                    HTML, CSS, JavaScript, UI/UX Design, Figma, Photoshop, Illustrator
-                </p>
-
-            </div>
-        </div>
+    <div class="gallery-item">
+        <img src="images/c.jpg" alt="Gallery Image">
     </div>
-</div>
-<!-- end of project description -->
 
-
-<!-- Package Update -->
-<div class="ex-basic-1 pt-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-10 offset-xl-1">
-                <h4>Package Update</h4>
-                <p>The package has been enhanced with new features to improve performance and user experience.</p>
-            </div>
-        </div>
+    <div class="gallery-item">
+        <img src="images/d.jpg" alt="Gallery Image">
     </div>
-</div>
-<!-- end of package update -->
 
-
-<!-- Philosophy / Tagline -->
-<div class="ex-basic-1 pt-3 pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-10 offset-xl-1">
-
-                <blockquote class="mb-4">
-                    “I build websites that visitors love—beautiful, fast, and easy to use.”
-                </blockquote>
-
-                <a class="btn-solid-reg mb-5" href="index.html">Back</a>
-
-            </div>
-        </div>
+    <div class="gallery-item">
+        <img src="images/e.jpg" alt="Gallery Image">
     </div>
-</div>
-<!-- end of philosophy -->
 
+    <div class="gallery-item">
+        <img src="images/f.jpg" alt="Gallery Image">
+    </div>
+     <div class="gallery-item">
+        <img src="images/g.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/h.png" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/i.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/j.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/k.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/l.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/m.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/n.jpg" alt="Gallery Image">
+    </div>
 
-    <!-- Footer -->
+ <div class="gallery-item">
+        <img src="images/o.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/p.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/q.png" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/r.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/s.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/t.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/u.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/v.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/w.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/x.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/y.jpg" alt="Gallery Image">
+    </div>
+ <div class="gallery-item">
+        <img src="images/z.jpg" alt="Gallery Image">
+    </div>
+
+</main>
+
+   <!-- Footer -->
     <div class="footer bg-gray">
         <div class="container">
             <div class="row">
@@ -251,6 +347,7 @@
         
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+    
     	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
